@@ -1,0 +1,322 @@
+/*Configurações Gerais*/
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root{
+  height: 100%;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-areas:
+    'header'
+    'main'
+    'footer';
+  grid-template-columns: 1fr;
+  grid-template-rows: 5rem 1fr 5rem;
+  height: 100%;
+}
+
+header {
+  grid-area: 'header';
+  background-color: 	#2F4F4F;
+}
+main {
+  grid-area: 'main';
+  padding: 1rem;
+}
+footer {
+  grid-area: 'footer';
+  background-color: 	#2F4F4F;
+  color: #ffffff;
+}
+
+footer a {
+  color: white;
+  padding: 1rem;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+a:hover{
+    color: #3CB371;
+}
+
+h1 {
+  font-size: 1.8rem;
+  padding: 1rem 0;
+}
+h2 {
+  font-size: 1.6rem;
+  padding: 1rem 0;
+}
+
+ul{
+  padding: 2rem;
+  margin: 0;
+  list-style-type: none;
+}
+
+li{
+  margin-top: 1rem;
+}
+
+input, 
+select, 
+textarea,
+button{
+  padding: 1rem;
+  border-radius: 0.5rem;
+  border: 0.1rem #cccc solid;
+  font-family: Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button{
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+input:hover, 
+select:hover, 
+textarea:hover,
+button:hover{
+  border: 0.1rem #404040 solid;
+}
+
+
+button.primary{
+  background-color: #00FF7F;
+}
+
+button.block{
+  width: 100%;
+}
+
+button.small{
+  font-size: 1.2rem;
+}
+
+/*Css header*/  
+
+header a {
+  color: white;
+  padding: 1rem;
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row.center{
+      justify-content: center;
+}
+
+.row.top{
+  align-items: flex-start;
+}
+
+.colum1 {
+  flex: 1 1 25rem;
+}
+
+.colum2 {
+  flex: 2 1 50rem;
+}
+
+.badge{
+  background-color: #F02020;
+  color: white;
+  border-radius: 50%;
+  padding: 0.2rem 0.7rem;
+  font-size: 1.4rem;
+  margin-left: 0.2rem;
+}
+
+.min-30{
+  min-width: 5rem;
+}
+
+/*imagem css*/
+.img{
+  border-radius: 0.5rem;
+}
+
+img.imagem{
+  max-width: 29rem;
+  width: 100%;
+}
+
+
+img.large {
+  width: 100%;
+}
+
+img.small{
+  max-width: 10rem;
+  width: 100%;
+}
+
+/*card css*/
+
+.card{
+  border: 0.1rem #c0c0c0 solid;
+  background-color: #f8f8f8;
+  border-radius: 0.5rem;
+  margin: 1rem;
+}
+
+.card-body{
+  padding: 1rem;
+}
+
+.card-body > *{
+  margin-bottom: 0.5rem;
+}
+
+.price{
+  font-size: 2rem;
+}
+
+.rating span {
+  color: #f0c040;
+  margin: 0.1rem;
+}
+
+.rating span:last-child{
+  color: black;
+}
+
+/*Css Alertas*/
+
+.success{
+  color: #20a020;
+}
+
+.error{
+  color: #a02020;
+}
+
+.alert{
+  padding: 1rem;
+  border: 0.1rem solid transparent;
+  border: 0.5rem;
+}
+
+.alert-info{
+  color: #2020a0;
+  background-color: #e0e0ff;
+}
+
+.alert-danger{
+  color: #a02020;
+  background-color: #ffe0e0e0;
+}
+
+.alert-success{
+  color: #20a020;
+}
+
+/*Formulário */
+
+.form{
+  max-width: 60rem;
+  margin: 0 auto;
+  background-color: #f8f8f8;
+  padding: 2rem;
+}
+
+.form > div{
+  display: flex;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.form label {
+  margin: 1rem 0 ;
+  display: block;
+}
+
+/*Dropdown css*/
+
+.dropdown{
+  display: inline-block;
+  position: relative;
+}
+
+.dropdown-content{
+  position: absolute;
+  display: none;
+  right: 0;
+  min-width: 12rem;
+  padding: 1rem;
+  z-index: 1;
+  background-color: #2F4F4F;
+  margin: 0;
+  margin-top: 0.4rem;
+  border-radius: 0.5rem;
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+/*Loading css*/
+.loading{
+  display: block !important;  
+}
+
+/*Checkouts Steps*/
+
+.checkout-steps > div{
+  border-top: 0.3rem #c0c0c0 solid;
+  color: #c0c0c0;
+  flex: 1;
+  padding: 1rem;
+  font-weight: bold;
+}
+
+.checkout-steps > div.active{
+  border-top-color: #98FB98;
+  color: #98FB98;
+}
+
+/*tabela*/
+
+.table{
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table tbody tr:nth-of-type(odd){
+  background-color: #f4f4f4;
+}
+
+.table td, .table th {
+  text-align: center;
+  border: 1rem solid #e4e4e4;
+  padding: 0.5rem;
+}
+
+.table button{
+  margin: 0 0.2rem;
+}
