@@ -34,7 +34,7 @@ export default function ProdutosList(props){
             <br/>
             {loadingDelete && <LoadingBox></LoadingBox>}
             {errorDelete && <MessageBox variant="danger">{errorDelete}</MessageBox>}
-            {successDelete && (<MessageBox variant="success">Usuário apagado com sucesso</MessageBox>)}
+            {successDelete && (<MessageBox variant="success">Produto apagado com sucesso</MessageBox>)}
             {
                 loading ? <LoadingBox></LoadingBox>
                 :
